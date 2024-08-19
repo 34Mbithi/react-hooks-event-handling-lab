@@ -1,13 +1,16 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+// Code Keypad Component Here
 
-import Keypad from './components/Keypad';
-import EyesOnMe from './components/EyesOnMe';
+function Keypad (){
 
-ReactDOM.render(
-  <div>
-    <Keypad />
-    <EyesOnMe />
-  </div>,
-  document.getElementById('root')
-);
+function handleChange(){
+    console.log('Entering password...')
+}
+
+    return (
+        <div>
+            <input type="password" onChange={handleChange}/>
+        </div>
+    )
+}
+
+export default Keypad;
